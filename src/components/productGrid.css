@@ -1,0 +1,52 @@
+body {
+    background-color: #1a1d20;
+}
+.card {
+    background-color: #d3d3d3;
+    transition: all 0.3s;
+    height: 100%;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+
+    height: 100%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body a{
+    color: inherit; 
+    text-decoration: none;
+}
+
+
+.busqueda {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #1a1d20;
+    outline: none;
+    border: 2px solid #0275d8;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.busqueda input {
+    background-color: #1a1d20;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
