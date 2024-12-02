@@ -13,9 +13,9 @@ export default function ProductDetail() {
             .catch((error) => console.error("Error al cargar el producto:", error));
     }, [id]);
 
-
+    
     if (!product) {
-        return <p>Producto no encontrado.</p>;
+        return null;  
     }
 
     return (
@@ -25,10 +25,8 @@ export default function ProductDetail() {
                 <img src={product.imgUrl} alt={product.name} />
             </div>
 
-
             <div className="product-details">
                 <h2>{product.name}</h2>
-
 
                 <div className="product-price-link">
                     <h3>Precio Amazon</h3>
